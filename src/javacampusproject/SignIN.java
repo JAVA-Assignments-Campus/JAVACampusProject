@@ -31,13 +31,26 @@ public class SignIN extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
+        setResizable(false);
+        setType(java.awt.Window.Type.POPUP);
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 204));
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 51));
         jPanel2.setAutoscrolls(true);
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel2MouseDragged(evt);
+            }
+        });
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jPanel2MousePressed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -90,6 +103,15 @@ public class SignIN extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private int xMouse, yMouse;
+    private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel2MousePressed
+
+    private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel2MouseDragged
 
     /**
      * @param args the command line arguments
