@@ -107,6 +107,8 @@ public class SignIN extends javax.swing.JFrame {
     private int xMouse, yMouse;
     private void jPanel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MousePressed
         // TODO add your handling code here:
+        xMouse=evt.getX();
+        yMouse=evt.getY();
     }//GEN-LAST:event_jPanel2MousePressed
 
     private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
