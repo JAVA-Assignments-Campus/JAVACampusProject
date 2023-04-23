@@ -113,6 +113,9 @@ public class SignIN extends javax.swing.JFrame {
 
     private void jPanel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseDragged
         // TODO add your handling code here:
+        int x=evt.getXOnScreen();
+        int y=evt.getYOnScreen();
+        setLocation(x-xMouse,y-yMouse);
     }//GEN-LAST:event_jPanel2MouseDragged
 
     /**
