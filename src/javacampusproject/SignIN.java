@@ -4,12 +4,19 @@
  */
 package javacampusproject;
 
+import java.sql.Connection;
+import java.
+
+
 /**
  *
  * @author Jehan
  */
 public class SignIN extends javax.swing.JFrame {
-
+    Connection con = null;
+    PreparedStatement pst = null;
+    ResultSet rs = null;
+    
     /**
      * Creates new form SignIN
      */
