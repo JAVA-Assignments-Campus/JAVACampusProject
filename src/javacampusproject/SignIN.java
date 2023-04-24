@@ -95,7 +95,7 @@ public class SignIN extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        signIN_img.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        signIN_img.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         signIN_img.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
