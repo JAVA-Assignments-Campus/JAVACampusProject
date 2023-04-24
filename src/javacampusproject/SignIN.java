@@ -18,7 +18,7 @@ public class SignIN extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(null);
         
-        signIN_img.setIcon(new javax.swing.ImageIcon("/images/user128.png"));
+        signIN_img.setIcon(new javax.swing.ImageIcon("/images/user2.png"));
     }
 
     /**
