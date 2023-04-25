@@ -220,7 +220,8 @@ public class SignIN extends javax.swing.JFrame {
             con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
             pst = con.prepareStatement(query);
             pst.setString(1, user_name.getText());
-            pst.setString(2, );
+            pst.setString(2, user_pass.getText());
+            pst.setString(3, String.valueOf());
         }catch(Exception ex){            
             JOptionPane.showMessageDialog(this, ex.getMessage());
         }
