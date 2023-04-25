@@ -217,6 +217,8 @@ public class SignIN extends javax.swing.JFrame {
         try{
             String query = "SELECT * FROM `user_tbl` WHERE username =? and password =? and usertype =?";
             con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
+            pst = con.prepareStatement(query);
+            pst.setString(1, txtuser.getText());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
