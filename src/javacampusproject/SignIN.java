@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.DriverManager;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -219,9 +220,8 @@ public class SignIN extends javax.swing.JFrame {
             con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
             pst = con.prepareStatement(query);
             pst.setString(1, user_name.getText());
-        }catch(Exception ex){
-            
-            
+        }catch(Exception ex){            
+            JOptionPane.showMessageDialog(this, ex.getMessage());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
