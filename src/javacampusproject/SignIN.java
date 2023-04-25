@@ -227,7 +227,9 @@ public class SignIN extends javax.swing.JFrame {
             if(rs.next()){
                 JOptionPane.showMessageDialog(this, "Loged as "+rs.getString("user_type"));                
                 if(userType.getSelectedIndex()==0){
-                
+                    admin a = new admin();
+                    a.setVisible(true);
+                    this.setVisible(false);
                 }
             }
 
