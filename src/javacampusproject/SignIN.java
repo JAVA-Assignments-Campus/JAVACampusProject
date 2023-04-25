@@ -214,7 +214,7 @@ public class SignIN extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-            String query = "SELECT * FROM `user_tbl` WHERE 1";
+            String query = "SELECT * FROM `user_tbl` WHERE username =? and password =? and usertype =?";
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
