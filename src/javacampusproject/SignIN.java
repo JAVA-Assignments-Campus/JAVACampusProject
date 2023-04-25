@@ -230,8 +230,15 @@ public class SignIN extends javax.swing.JFrame {
                     admin a = new admin();
                     a.setVisible(true);
                     this.setVisible(false);
-                }
+                }else{
+                    user u = new user();
+                    u.setVisible(true);
+                    this.setVisible(false);
+                }                
             }
+            else{
+                JOptionPane.showMessageDialog(this, "Username and Password not Match..!");
+            }          
 
         }catch(Exception ex){            
             JOptionPane.showMessageDialog(this, ex.getMessage());
