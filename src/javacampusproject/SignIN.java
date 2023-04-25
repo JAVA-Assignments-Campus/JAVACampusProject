@@ -7,6 +7,7 @@ package javacampusproject;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.DriverManager;
 
 
 /**
@@ -215,7 +216,7 @@ public class SignIN extends javax.swing.JFrame {
         // TODO add your handling code here:
         try{
             String query = "SELECT * FROM `user_tbl` WHERE username =? and password =? and usertype =?";
-            con = 
+            con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
