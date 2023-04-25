@@ -215,12 +215,18 @@ public class SignIN extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         try{
-            String query = "SELECT * FROM `user_tbl` WHERE username =? and password =? and usertype =?";
+            String query = "SELECT * FROM `user_tbl` WHERE username =? and pass =? and user_type =?";
             con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
             pst = con.prepareStatement(query);
             pst.setString(1, user_name.getText());
             pst.setString(2, user_pass.getText());
             pst.setString(3, String.valueOf(userType.getSelectedItem()));
+            
+            rs=pst.executeQuery();
+            
+            if(rs.next()){
+                JOptionPane.showMessageDialog(this, "Loged as "+rs.getString("user_type"));
+            }
         }catch(Exception ex){            
             JOptionPane.showMessageDialog(this, ex.getMessage());
         }
