@@ -225,11 +225,12 @@ public class SignIN extends javax.swing.JFrame {
             rs=pst.executeQuery();
             
             if(rs.next()){
-                JOptionPane.showMessageDialog(this, "Loged as "+rs.getString("user_type"));
-            }
-            if(userType.getSelectedIndex()==0){
+                JOptionPane.showMessageDialog(this, "Loged as "+rs.getString("user_type"));                
+                if(userType.getSelectedIndex()==0){
                 
+                }
             }
+
         }catch(Exception ex){            
             JOptionPane.showMessageDialog(this, ex.getMessage());
         }
