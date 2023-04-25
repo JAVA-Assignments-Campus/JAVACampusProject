@@ -215,6 +215,7 @@ public class SignIN extends javax.swing.JFrame {
         // TODO add your handling code here:
         try{
             String query = "SELECT * FROM `user_tbl` WHERE username =? and password =? and usertype =?";
+            con = 
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
