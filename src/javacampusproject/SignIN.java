@@ -217,8 +217,7 @@ public class SignIN extends javax.swing.JFrame {
         try{
             String query = "SELECT * FROM `user_tbl` WHERE username =? and pass =? and user_type =?";
             Class.forName("com.mysql.jdbc.Driver"); 
-
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_project_campus", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/java_project_campus", "root", "");
             pst = con.prepareStatement(query);
             pst.setString(1, user_name.getText());
             pst.setString(2, user_pass.getText());
